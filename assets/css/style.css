@@ -37,8 +37,9 @@ html, body { font-size: 16px; word-spacing: 1px; box-sizing: border-box; backgro
 .form-wrap { margin-top: 40px; }
 .form-wrap > .title { color: #fff; margin-bottom: 10px; text-align: center; }
 .form-wrap > .title > img { width: 40%; }
-.form-wrap > .form > * { margin-bottom: 10px; height: 40px; }
-.form-wrap > .form > button { border: 1px solid #6c5d7e; width: 100%; border-radius: 4px; background: #fff; color: rgba(0, 0, 0, 0.7); }
+.form-wrap > .form { padding: 0 80px; }
+.form-wrap > .form > * { width: 100%; margin: 0 auto; margin-bottom: 10px; height: 40px; }
+.form-wrap > .form > button { border: 1px solid #6c5d7e; border-radius: 4px; background: #fff; color: rgba(0, 0, 0, 0.7); }
 
 .form-control { width: 100%; height: 30px; border: 1px solid #6c5d7e; padding: 0 10px; border-radius: 4px; }
 
@@ -53,6 +54,7 @@ html, body { font-size: 16px; word-spacing: 1px; box-sizing: border-box; backgro
 .rank > div > .list > div { max-width: 700px; width: 100%; display: flex; justify-content: space-between; padding: 0 5%; align-items: center; margin: 0 auto; text-align: left; position: relative; }
 .rank > div > .list > div > .title { width: calc(100% / 3); font-size: 20px; position: absolute; top: -40px; left: 35%; text-align: center; color: #fff; }
 .rank > div > .list > div > .title > .list-img { width: 50px; height: 50px; }
+.rank > div > .list > div > .list-content { text-align: left; }
 .rank > div > .list > div > .list-content > .c-title { font-weight: bold; }
 .rank > div > .list > div > .list-content > .c-content { font-size: 14px; }
 .rank > div > .list > div > .list-content > .c-info { font-size: 12px; }
@@ -70,7 +72,7 @@ html, body { font-size: 16px; word-spacing: 1px; box-sizing: border-box; backgro
 .view-content > .v-box > .v-content { text-align: left; }
 .view-content > button { width: 50%; height: 40px; border-radius: 20px; background: #6c5d7e; border: none; color: #fff; }
 
-.view-info { position: fixed; width: 100%; transition: 1s; height: 100px; left: 0; bottom: 0; background: #fff; text-align: center; font-size: 18px; padding-top: 10px; }
+.view-info { position: fixed; width: 100%; transition: 1s; height: 100px; left: 0; bottom: 0; background: #fff; text-align: center; font-size: 18px; padding-top: 10px; box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); }
 
 /* chat */
 .chat-name { color: #fff; text-align: center; margin-top: 10px; }
