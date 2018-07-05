@@ -12,6 +12,10 @@ $mainColor: #6c5d7e;
     opacity: 0;
 }
 
+.hide{
+    display: none;
+}
+
 @font-face {
     font-family: renner;
     src: url(https://indestructibletype-fonthosting.github.io/renner.css);
@@ -36,6 +40,10 @@ html,body {
     list-style: none;
     text-decoration: none;
     outline: none;
+}
+
+.hide{
+    display: none;
 }
 
     /* header */
@@ -401,6 +409,78 @@ html,body {
         background: $mainColor;
         color: #fff;
     }
+}
+
+.chat-pay{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    background: $mainColor;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.pay{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    background: $mainColor;
+    color: #fff;
+    text-align: center;
+    transition: 1s;
+    opacity: 0;
+    >div{
+        position: absolute;
+        transition: 1s;
+    }
+    >.before{
+        left: 7%;
+        >.false{
+            position: absolute;
+            right: 0px;
+            top: 20px;
+        }
+        >p:nth-child(2){
+            font-size: 28px;
+            margin-top: 100px;
+        }
+        >i{
+            font-size: 120px;
+            margin-top: 150px;
+        }
+        >p:last-child{
+            margin-top: 150px;
+        }
+    }
+    >.after{
+        top: 25%;
+        left: 25%;
+        display: none;
+        >i{
+            font-size: 120px;
+        }
+        >p{
+            margin-top: 100px;
+            font-size: 32px;
+        }
+    }
+}
+
+@keyframes hide {
+    0%{transform: scale(1,1) translateX(0);opacity: 1;}
+    50%{transform: scale(1,1) translateX(0);opacity: 1;}
+    100%{transform: scale(.6,.6) translateX(100px);opacity: 0;}
+}
+
+@keyframes show {
+    0%{transform: scale(.6,.6) translateX(100px);opacity: 0;}
+    50%{transform: scale(.6,.6) translateX(100px);opacity: 0;}
+    100%{transform: scale(1,1) translateX(0px);opacity: 1;}
 }
 
     /* mypage */

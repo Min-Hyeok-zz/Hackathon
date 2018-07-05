@@ -49,6 +49,19 @@
         <input type="text" name="chat" placeholder="send message">
         <button type="button"><i class="fas fa-comment"></i></button>
     </form>
+    <button class="chat-pay">결제하기</button>
+    <div class="pay">
+        <div class="before">
+            <p class="false">취소</p>
+            <p>등록된 지문을 인식 해 주세요</p>
+            <i class="fas fa-fingerprint"></i>
+            <p>또는 PIN 번호 사용</p>
+        </div>
+        <div class="after hide">
+            <i class="fab fa-gratipay"></i>
+            <p>완료되었습니다.</p>
+        </div>
+    </div>
   </section>
 </template>
 

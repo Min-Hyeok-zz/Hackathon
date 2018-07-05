@@ -34,8 +34,20 @@ function menuToggle(){
     $("#aside").toggleClass("active")
 }
 
+function pay () {
+    $(".pay").fadeIn(0)
+    setTimeout(function(){
+        $(".before").css({animation:"hide 2s"}).fadeOut()
+        $(".after").fadeIn().css({animation: "show 2s"})
+    },2000)
+    setTimeout(function(){
+        $(".pay").css({opacity: "0"})
+    },5000)
+}
+
 $(document)
 .on("click",".menu-toggle",menuToggle)
 .on("click","#gnb",menuToggle)
+.on("click",".chat-pay",pay)
 
 //메인페이지 애니메이션
